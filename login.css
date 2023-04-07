@@ -1,0 +1,24 @@
+ul li a{
+
+    text-decoration: none;
+color: aliceblue;
+
+}
+ul li{
+    margin-top: 12px;
+    list-style: none;
+}
+.icon_footer a{
+    color: aliceblue;
+}
+@media screen and (min-width:989px){
+   .navbar-nav{
+    margin-right: 30px;
+   }
+  }
+ .nav-link:focus, .nav-link:hover {
+    background-color: rgb(209, 209, 209);
+    color: aliceblue;
+}
+
+

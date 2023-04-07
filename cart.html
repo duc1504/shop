@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js">
+    <title>Giỏ hàng</title>
+</head>
+<body>
+     <!-- Bắt đầu header -->
+     <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="ms-auto d-none d-lg-block">
+                    <div class="input-group">
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto me-5 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link mx-4 text-uppercase" href="index.html">
+                        <h6>Home</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4 text-uppercase" href="#">
+                        <h6>Shop</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4 text-uppercase" href="#">
+                        <h6>Page</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4 text-uppercase" href="#">
+                        <h6>Blog</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4 text-uppercase" href="#">
+                        <h6>Contact</h6>
+                    </a>
+                </li>
+                </ul>
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="cart.html"><i class="fa-solid fa-cart-shopping me-1"></i>
+                            Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
+                            Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item "><a href="index.html"><div class="text-primary">Home</div></a></li>
+        <li class="breadcrumb-item active">cart</li>
+      </ul>
+     </div>
+<!-- bắt đầu giỏ hàng -->
+    <section class=" h-custom">
+        <div class="container py-3 ">
+          <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">Giỏ hàng</h1>
+                          <h6 class="mb-0 text-muted">3 sản phảm</h6>
+                        </div>
+                        <hr class="my-4">
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="img/product-3.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Giày</h6>
+                            <h6 class="text-black mb-0">Giày thời trang</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 40.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="img/product-2.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Áo</h6>
+                            <h6 class="text-black mb-0">Áo sơ mi</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 35.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="img/product-7.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Balo</h6>
+                            <h6 class="text-black mb-0">Balo da bò</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 70.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="index.html" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h1 class="fw-bold mb-5 mt-2 pt-1">Đơn hàng</h1>
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-4">
+                          <h5 class="text-uppercase">Sản phẩm 3</h5>
+                          <h5>€ 132.00</h5>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Phương thức thanh toán</h5>
+      
+                        <div class="mb-4 pb-2">
+                          <select class="select">
+                            <option value="1">Thanh toán khi nhận hàng</option>
+                            <option value="2">Visa/MasterCard</option>
+                            <option value="3">MOMO</option>
+                            <option value="4">Zalo Pay</option>
+                          </select>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Mã giảm giá</h5>
+                        <form class="d-flex ">
+                            <input class="form-control me-2" type="search" placeholder="Nhập mã tại đây" aria-label="Search">
+                            <button type="button" class="btn btn-success">Apply!</button>
+                          </form>
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">Tổng thanh toán</h5>
+                          <h4><b>$ 145.00</b></h4>
+                        </div>
+      
+                        <button type="button" class="btn btn-success btn-block btn-lg px-5 py-3"
+                          data-mdb-ripple-color="dark">Thanh toán</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- kết thuc giỏ hàng -->
+      <footer class="text-center text-lg-start bg-dark pt-3 mt-3">
+        <div class="container text-center text-md-start mt-5 text-white">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+                    <img src="img/footer-logo.png" alt="">
+                    <p class="mt-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quod,
+                    </p>
+                   <img class="mt-3" src="img/payment.png" alt="">
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class=" mb-3">
+                       SHOPPING
+                       <hr>
+                    </h6>
+                    <ul>
+                        <li><a href="#!">Clothing Store</a></li>
+                        <li><a href="#!">Trending Shoes</a></li>
+                        <li><a href="#!">Accessories</a></li>
+                        <li><a href="#!">Sale</a></li>
+                    
+                    </ul>
+                    
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class=" mb-3">
+                        INFORMATION 
+                        <hr>
+                    </h6>
+                    <ul>
+                        <li><a href="#!">Questions?</a></li>
+                        <li>  <a href="#!">Payments Methods</a></li>
+                        <li> <a href="#!">Sizing Charts</a></li>
+                        <li> <a href="#!">Return Policy</a></li>
+                    </ul>
+                    
+                </div>            
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class=" mb-4">
+                        NEWLETTER
+                        <hr>
+                    </h6>
+                    <form class="d-flex flex-column">
+                        <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                        <button class="btn bg-primary text-light mt-2" type="submit">SUBSCRIBE <i class="fa-solid fa-right-long"></i></button>
+                      </form>
+                      <div class="d-flex mt-3 icon_footer">
+                        <a href="https://www.facebook.com/duc1504/"><i class="fa-brands fa-2xl fa-facebook me-2"></i></a>
+                        <a href=""><i class="fa-brands fa-2xl fa-twitter me-2"></i></a>
+                        <a href=""><i class="fa-brands fa-2xl fa-google-plus me-2"></i></a>
+                       <a href=""> <i class="fa-brands fa-2xl fa-pinterest me-2"></i></a>
+                       <a href=""> <i class="fa-brands fa-2xl fa-youtube me-2"></i></a>
+                        
+                      </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="d-flex justify-content-center text-white  footer pb-3">
+            <div class="me-5 d-none d-lg-block">
+              <span><b> ©Designer by Trịnh Ngọc Đức. ALL right reserved.</b></span>
+            </div>
+          </div>
+</footer>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+ul li a{
+
+    text-decoration: none;
+color: aliceblue;
+
+}
+ul li{
+    margin-top: 12px;
+    list-style: none;
+}
+.icon_footer a{
+    color: aliceblue;
+}
+.nav-link:hover {
+    background-color: rgb(209, 209, 209);
+  }

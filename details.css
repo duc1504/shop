@@ -1,0 +1,50 @@
+/* 
+@media only screen and (max-width: 768px) {
+  .anh_con{
+      display: none;
+  }
+
+} */
+
+.grow{
+  transition: 1s ease;
+  }
+  
+  .grow:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+  }
+  .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+ul li a{
+
+  text-decoration: none;
+color: aliceblue;
+
+}
+ul li{
+  margin-top: 12px;
+  list-style: none;
+}
+.icon_footer a{
+  color: aliceblue;
+}
+@media screen and (min-width:989px){
+ .navbar-nav{
+  margin-right: 30px;
+ }
+}
+.nav-link:focus, .nav-link:hover {
+  background-color: rgb(209, 209, 209);
+  color: aliceblue;
+}
+
+
+
