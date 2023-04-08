@@ -5,9 +5,13 @@ $(document).ready(function() {
       if(email == '' || password == '') {
         alert('Địa chỉ email và mật khẩu không được để trống');
         return false;
-      }else{
-        alert('Đăng nhập thành công');
+      } else if(email == 'ngocduc@gmail.com' && password == 'Duc1234') {
+       
         window.location.href = "home.html";
+      }
+      else{
+        alert('Tài khoản hoặc mật khẩu không chính xác');
+       
       }
     });
   });

@@ -33,4 +33,8 @@ $(document).ready(function() {
       $(this).prev().toggle();
       return false;
   });
+
+  $('#vote').click(function() {
+      alert('Cảm ơn bạn đã đánh giá sản phẩm của chúng tôi');
+  });
 });

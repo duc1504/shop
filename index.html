@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js">
+    <script src="jquery-3.6.4.min.js"></script>
     <title>Trang chủ</title>
 </head>
 
@@ -136,19 +137,19 @@
     <!-- Bắt đầu sản phẩm -->
     <div class="container mt-5">
         <div class="d-flex">
-            <ul class="nav nav-pills mx-auto mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mx-auto mb-3 d-block d-sm-flex" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-link active  " id="pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                         aria-selected="true"><h5>Best Seller</h5></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                    <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                         aria-selected="false"><h5>New Arrivals</h5></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                    <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
                         aria-selected="false"><h5>Hot Sales</h5></button>
                 </li>
@@ -684,9 +685,8 @@
                         <hr>
                     </h6>
                     <form class="d-flex flex-column">
-                        <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
-                        <button class="btn bg-primary text-light mt-2" type="submit">SUBSCRIBE <i
-                                class="fa-solid fa-right-long"></i></button>
+                        <input  class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                        <button id="sub" class="btn bg-primary text-light mt-2" type="submit">SUBSCRIBE <i class="fa-solid fa-right-long"></i></button>
                     </form>
                     <div class="d-flex mt-3 icon_footer">
                         <a href="https://www.facebook.com/duc1504/"><i
@@ -710,6 +710,14 @@
     </footer>
     <!-- Kết thúc footer -->
     <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+      $('#sub').click(function() {
+          alert('Cảm ơn bạn đã để lại thông tin.Chúng tôi sẽ liên hệ bạn khi có thông tin khuyến mãi');
+      });
+    });
+      </script>
+    
 </body>
 
 </html>
